@@ -369,3 +369,374 @@ footer{
 }
 
 }
+/* =====================================
+   CONVITE AYLA - 1 ANINHO
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#FFF5FB,#FFF,#F8F4FF);
+    color:#555;
+    overflow-x:hidden;
+}
+
+/* =========================
+   TELA DE ABERTURA
+========================= */
+
+#abertura{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(180deg,#FFEAF5,#FFF,#F8F4FF);
+    z-index:9999;
+    transition:1s;
+}
+
+.brilho{
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(circle,#ffffff 2px,transparent 2px);
+    background-size:70px 70px;
+    opacity:.45;
+    animation:brilho 18s linear infinite;
+}
+
+@keyframes brilho{
+
+0%{
+background-position:0 0;
+}
+
+100%{
+background-position:0 600px;
+}
+
+}
+
+.envelope{
+    width:360px;
+    position:relative;
+}
+
+.tampa{
+    width:100%;
+    height:140px;
+    background:#F7A8CB;
+    clip-path:polygon(0 0,100% 0,50% 100%);
+    transform-origin:top;
+    transition:1s;
+}
+
+.corpo{
+    background:white;
+    border-radius:0 0 25px 25px;
+    overflow:hidden;
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+}
+
+.carta{
+    padding:35px;
+    text-align:center;
+}
+
+.carta h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.carta h2{
+    color:#D76AA6;
+    margin-bottom:20px;
+}
+
+.carta p{
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+#abrirConvite{
+    padding:16px 38px;
+    border:none;
+    border-radius:50px;
+    background:#F58FB9;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#abrirConvite:hover{
+    transform:scale(1.05);
+    background:#EC6EA6;
+}
+
+/* =========================
+   SITE
+========================= */
+
+#site{
+    display:none;
+}
+
+.hero{
+    padding:90px 20px;
+    text-align:center;
+    background:linear-gradient(180deg,#FFEAF6,#FFF);
+}
+
+.hero h1{
+    font-family:'Great Vibes',cursive;
+    font-size:95px;
+    color:#EA78B2;
+}
+
+.hero h2{
+    color:#B36FD0;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+}
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes{
+    max-width:1100px;
+    margin:60px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#D76AA6;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+/* =========================
+   GALERIA
+========================= */
+
+.galeria{
+    max-width:1100px;
+    margin:70px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.galeria h2{
+    color:#D76AA6;
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+#fotoPrincipal{
+    width:100%;
+    max-width:650px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    transition:.5s;
+}
+
+.miniaturas{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.miniaturas img{
+    width:85px;
+    height:85px;
+    object-fit:cover;
+    border-radius:18px;
+    cursor:pointer;
+    transition:.3s;
+    border:3px solid transparent;
+}
+
+.miniaturas img:hover{
+    transform:scale(1.08);
+    border-color:#F58FB9;
+}
+
+/* =========================
+   CONTAGEM
+========================= */
+
+.contador{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.contador h2{
+    color:#D76AA6;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+#tempo{
+    font-size:42px;
+    color:#B36FD0;
+    font-weight:bold;
+}
+
+/* =========================
+   PRESENTES
+========================= */
+
+.presentes{
+    max-width:1000px;
+    margin:60px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.presentes h2{
+    color:#D76AA6;
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.listaPresentes{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.presente{
+    width:220px;
+    background:#fff;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    line-height:1.8;
+    font-size:20px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.acoes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:60px 20px;
+}
+
+.btn{
+    padding:18px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.mapa{
+    background:#F58FB9;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#888;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:70px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+#fotoPrincipal{
+    max-width:100%;
+}
+
+.miniaturas img{
+    width:70px;
+    height:70px;
+}
+
+.listaPresentes{
+    flex-direction:column;
+    align-items:center;
+}
+
+.presente{
+    width:90%;
+}
+
+.btn{
+    width:90%;
+    text-align:center;
+}
+
+#tempo{
+    font-size:30px;
+}
+
+}
