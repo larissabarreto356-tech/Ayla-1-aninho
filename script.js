@@ -107,3 +107,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+// ======================
+// BORBOLETAS
+// ======================
+
+function criarBorboleta(){
+
+    const b = document.createElement("div");
+
+    b.className = "borboleta";
+
+    b.innerHTML = "🦋";
+
+    b.style.left = "-50px";
+
+    b.style.top = Math.random()*window.innerHeight+"px";
+
+    b.style.animationDuration =
+    (12 + Math.random()*8)+"s";
+
+    document.body.appendChild(b);
+
+    setTimeout(()=>{
+
+        b.remove();
+
+    },20000);
+
+}
+
+setInterval(criarBorboleta,4000);
