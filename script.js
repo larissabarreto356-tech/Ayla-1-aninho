@@ -119,13 +119,31 @@ const musica = document.getElementById("musica");
 // ABERTURA DO CONVITE
 // =======================
 
-const abertura = document.getElementById("abertura");
-const site = document.getElementById("site");
-const botaoAbrir = document.getElementById("abrirConvite");
-const tampa = document.querySelector(".tampa");
+window.addEventListener("DOMContentLoaded", function () {
 
-botaoAbrir.addEventListener("click", () => {
+    const abertura = document.getElementById("abertura");
+    const site = document.getElementById("site");
+    const botaoAbrir = document.getElementById("abrirConvite");
+    const tampa = document.querySelector(".tampa");
+    const musica = document.getElementById("musica");
 
+    if (!botaoAbrir) {
+        console.log("Botão não encontrado.");
+        return;
+    }
+
+    botaoAbrir.addEventListener("click", function () {
+
+        tampa.style.transform = "rotateX(180deg)";
+
+        musica.play().catch(() => {});
+
+        abertura.style.display = "none";
+        site.style.display = "block";
+
+    });
+
+});
     // Abre a tampa do envelope
     tampa.style.transform = "rotateX(180deg)";
 
