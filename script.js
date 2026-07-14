@@ -137,3 +137,32 @@ function criarBorboleta(){
 }
 
 setInterval(criarBorboleta,4000);
+// ======================
+// PÉTALAS
+// ======================
+
+function criarPetala(){
+
+    const petala = document.createElement("div");
+
+    petala.className = "petala";
+
+    petala.innerHTML = "🌸";
+
+    petala.style.left = Math.random()*100 + "vw";
+
+    petala.style.fontSize =
+    (18 + Math.random()*18) + "px";
+
+    petala.style.animationDuration =
+    (6 + Math.random()*6) + "s";
+
+    document.body.appendChild(petala);
+
+    setTimeout(()=>{
+        petala.remove();
+    },12000);
+
+}
+
+setInterval(criarPetala,1200);
