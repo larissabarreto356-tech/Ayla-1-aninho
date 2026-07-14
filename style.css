@@ -484,3 +484,106 @@ height:70px;
 }
 
 }
+/* ===========================
+TELA DE ABERTURA
+=========================== */
+
+#abertura{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:linear-gradient(#ffeaf5,#fff7fd,#f4efff);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+.janela{
+
+background:white;
+
+padding:40px;
+
+border-radius:30px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+text-align:center;
+
+max-width:450px;
+
+}
+
+.janela h1{
+
+font-size:70px;
+
+margin-bottom:20px;
+
+animation:pulsar 2s infinite;
+
+}
+
+.janela h2{
+
+color:#d46fa8;
+
+margin-bottom:20px;
+
+}
+
+.janela p{
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+
+#abrir{
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:60px;
+
+background:#f58fb9;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+#abrir:hover{
+
+transform:scale(1.08);
+
+}
+
+@keyframes pulsar{
+
+0%{transform:scale(1);}
+50%{transform:scale(1.12);}
+100%{transform:scale(1);}
+
+}
