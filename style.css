@@ -765,3 +765,72 @@ opacity:0;
 }
 
 }
+/* =========================
+   TÍTULO COM BRILHO
+========================= */
+
+.hero h1{
+
+    background:linear-gradient(
+        90deg,
+        #d48a00,
+        #ffd700,
+        #fff2a8,
+        #ffd700,
+        #d48a00
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:brilhoTitulo 5s linear infinite;
+
+}
+
+@keyframes brilhoTitulo{
+
+0%{
+background-position:0%;
+}
+
+100%{
+background-position:300%;
+}
+
+}
+.card{
+
+    animation:flutuar 5s ease-in-out infinite;
+
+}
+
+@keyframes flutuar{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+body{
+
+background:
+
+linear-gradient(
+180deg,
+#fff7fc,
+#fff,
+#f8f3ff);
+
+background-attachment:fixed;
+
+}
