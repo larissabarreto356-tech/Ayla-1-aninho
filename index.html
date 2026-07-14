@@ -17,9 +17,9 @@
 
 <body>
 
-<!-- ========================= -->
-<!-- TELA DE ABERTURA -->
-<!-- ========================= -->
+<!-- =========================
+TELA DE ABERTURA
+========================= -->
 
 <div id="abertura">
 
@@ -31,34 +31,26 @@
 
         <div class="corpo">
 
-          <h1>🌸</h1>
+            <div class="carta">
 
-<h2>Você recebeu um convite muito especial</h2>
+                <h1>🌸</h1>
 
-<p>
-Nossa princesa <strong>Ayla</strong> está completando
-seu <strong>1º aninho</strong>.
+                <h2>Você recebeu um convite muito especial</h2>
 
-<br><br>
+                <p>
+                    Nossa princesa <strong>Ayla</strong> está completando
+                    seu <strong>1º aninho</strong>.
+                    <br><br>
+                    Será uma alegria celebrar esse momento com você!
+                </p>
 
-Será uma alegria celebrar esse momento com você!
-
-</p>
-
-<button id="abrirConvite">
-Abrir Convite 💖
-</button>
-
-<p class="fraseFinal">
-✨ Toque no botão para abrir o convite. ✨
-</p>
+                <button id="abrirConvite">
+                    Abrir Convite 💖
+                </button>
 
                 <p class="fraseFinal">
-
-✨ Toque no botão e venha viver esse momento mágico conosco. ✨
-
-</p>
-                </button>
+                    ✨ Toque no botão para abrir o convite. ✨
+                </p>
 
             </div>
 
@@ -68,9 +60,9 @@ Abrir Convite 💖
 
 </div>
 
-<!-- ========================= -->
-<!-- SITE -->
-<!-- ========================= -->
+<!-- =========================
+SITE
+========================= -->
 
 <div id="site">
 
@@ -110,11 +102,9 @@ Agora queremos celebrar esse momento com você.
 <h3>📍 Local</h3>
 
 <p>
-
 Anima Kids<br>
 Av. Espanha, 359<br>
 Bagé - RS
-
 </p>
 
 </div>
@@ -125,43 +115,30 @@ Bagé - RS
 
 <h2>Momentos da Ayla</h2>
 
-<img
-id="fotoPrincipal"
-src="foto1.jpg"
-alt="Ayla">
+<img id="fotoPrincipal" src="foto1.jpg" alt="Ayla">
 
 <div class="miniaturas">
 
 <img src="foto1.jpg" onclick="trocarFoto(1)">
-
 <img src="foto2.jpg" onclick="trocarFoto(2)">
-
 <img src="foto3.jpg" onclick="trocarFoto(3)">
-
 <img src="foto4.jpg" onclick="trocarFoto(4)">
-
 <img src="foto5.jpg" onclick="trocarFoto(5)">
-
 <img src="foto6.jpg" onclick="trocarFoto(6)">
+
 </div>
 
 </section>
-
-<!-- CONTAGEM -->
 
 <section class="contador">
 
 <h2>Faltam...</h2>
 
 <div id="tempo">
-
 Calculando...
-
 </div>
 
 </section>
-
-<!-- PRESENTES -->
 
 <section class="presentes">
 
@@ -191,24 +168,18 @@ Fralda<br>
 
 </section>
 
-<!-- BOTÕES -->
-
 <section class="acoes">
 
 <a class="btn whatsapp"
 href="https://wa.me/5553997018089"
 target="_blank">
-
 💬 Confirmar Presença
-
 </a>
 
 <a class="btn mapa"
 href="https://www.google.com/maps/search/?api=1&query=Anima+Kids+Avenida+Espanha+359+Bagé+RS"
 target="_blank">
-
 📍 Como Chegar
-
 </a>
 
 </section>
@@ -216,9 +187,7 @@ target="_blank">
 <footer>
 
 <p>
-
 Feito com ❤️ para celebrar o primeiro aninho da Ayla.
-
 </p>
 
 </footer>
@@ -227,14 +196,17 @@ Feito com ❤️ para celebrar o primeiro aninho da Ayla.
 
 <!-- MÚSICA -->
 
-<audio id="musica" loop preload="auto">
-
+<audio id="musica" preload="auto" loop>
 <source src="musica.mp3" type="audio/mpeg">
-
 </audio>
+
+<!-- BOTÃO DA MÚSICA -->
+
+<button id="controleMusica">
+🔊
+</button>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
