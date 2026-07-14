@@ -1,7 +1,6 @@
-/*=====================================
- AYLA - 1 ANINHO
- Jardim Encantado
-=====================================*/
+/* =====================================
+   CONVITE AYLA - 1 ANINHO
+===================================== */
 
 *{
     margin:0;
@@ -14,261 +13,141 @@ html{
 }
 
 body{
-
     font-family:'Poppins',sans-serif;
-
-    background:linear-gradient(180deg,#FFF5FB,#FFFDFE,#F7F2FF);
-
+    background:linear-gradient(180deg,#FFF5FB,#FFF,#F8F4FF);
     color:#555;
-
     overflow-x:hidden;
-
 }
 
-/*==============================
-ABERTURA
-==============================*/
+/* =========================
+   TELA DE ABERTURA
+========================= */
 
 #abertura{
-
     position:fixed;
-
     inset:0;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-    background:linear-gradient(180deg,#FFEAF5,#FFF,#F5F1FF);
-
-    z-index:99999;
-
+    background:linear-gradient(180deg,#FFEAF5,#FFF,#F8F4FF);
+    z-index:9999;
     transition:1s;
-
 }
 
 .brilho{
-
     position:absolute;
-
     inset:0;
-
     background-image:
-
     radial-gradient(circle,#ffffff 2px,transparent 2px);
-
-    background-size:80px 80px;
-
-    opacity:.4;
-
-    animation:brilho 20s linear infinite;
-
+    background-size:70px 70px;
+    opacity:.45;
+    animation:brilho 18s linear infinite;
 }
 
 @keyframes brilho{
 
 0%{
-
 background-position:0 0;
-
 }
 
 100%{
-
-background-position:0 500px;
-
+background-position:0 600px;
 }
 
 }
 
 .envelope{
-
     width:360px;
-
     position:relative;
-
-}
-
-.corpo{
-
-    background:white;
-
-    border-radius:0 0 25px 25px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.15);
-
-    overflow:hidden;
-
 }
 
 .tampa{
-
     width:100%;
-
     height:140px;
-
-    background:#F6B5D5;
-
+    background:#F7A8CB;
     clip-path:polygon(0 0,100% 0,50% 100%);
-
     transform-origin:top;
+    transition:1s;
+}
 
-    transition:.9s;
-
+.corpo{
+    background:white;
+    border-radius:0 0 25px 25px;
+    overflow:hidden;
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
 }
 
 .carta{
-
     padding:35px;
-
     text-align:center;
-
 }
 
 .carta h1{
-
-    font-size:65px;
-
+    font-size:60px;
     margin-bottom:15px;
-
-    animation:pulsar 2s infinite;
-
 }
 
 .carta h2{
-
-    color:#D66BA6;
-
-    margin-bottom:18px;
-
+    color:#D76AA6;
+    margin-bottom:20px;
 }
 
 .carta p{
-
     line-height:1.8;
-
     margin-bottom:25px;
-
 }
 
 #abrirConvite{
-
-    padding:16px 35px;
-
+    padding:16px 38px;
     border:none;
-
     border-radius:50px;
-
     background:#F58FB9;
-
     color:white;
-
     font-size:18px;
-
     cursor:pointer;
-
     transition:.3s;
-
 }
 
 #abrirConvite:hover{
-
     transform:scale(1.05);
-
-    background:#EC6FA5;
-
+    background:#EC6EA6;
 }
 
-@keyframes pulsar{
-
-0%{transform:scale(1);}
-50%{transform:scale(1.08);}
-100%{transform:scale(1);}
-
-}
-
-/*==============================
-SITE
-==============================*/
+/* =========================
+   SITE
+========================= */
 
 #site{
-
     display:none;
-
-    animation:aparecer 1s;
-
 }
-
-@keyframes aparecer{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-/*==============================
-CABEÇALHO
-==============================*/
 
 .hero{
-
     padding:90px 20px;
-
     text-align:center;
-
-    background:linear-gradient(180deg,#FFE9F5,#FFF);
-
+    background:linear-gradient(180deg,#FFEAF6,#FFF);
 }
 
 .hero h1{
-
     font-family:'Great Vibes',cursive;
-
     font-size:95px;
-
-    color:#EA79B2;
-
+    color:#EA78B2;
 }
 
 .hero h2{
-
-    font-size:38px;
-
     color:#B36FD0;
-
+    font-size:38px;
     margin-bottom:20px;
-
 }
 
 .hero p{
-
-    font-size:22px;
-
     max-width:700px;
-
     margin:auto;
-
+    font-size:20px;
     line-height:1.8;
-
 }
-/*==============================
-INFORMAÇÕES
-==============================*/
+/* =========================
+   INFORMAÇÕES
+========================= */
 
 .informacoes{
     max-width:1100px;
@@ -284,8 +163,8 @@ INFORMAÇÕES
     border-radius:25px;
     padding:30px;
     text-align:center;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
-    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .card:hover{
@@ -293,18 +172,14 @@ INFORMAÇÕES
 }
 
 .card h3{
-    color:#D66BA6;
+    color:#D76AA6;
     margin-bottom:15px;
     font-size:24px;
 }
 
-.card p{
-    line-height:1.7;
-}
-
-/*==============================
-GALERIA
-==============================*/
+/* =========================
+   GALERIA
+========================= */
 
 .galeria{
     max-width:1100px;
@@ -314,8 +189,8 @@ GALERIA
 }
 
 .galeria h2{
-    color:#D66BA6;
-    font-size:40px;
+    color:#D76AA6;
+    font-size:38px;
     margin-bottom:30px;
 }
 
@@ -342,7 +217,7 @@ GALERIA
     border-radius:18px;
     cursor:pointer;
     transition:.3s;
-    border:4px solid transparent;
+    border:3px solid transparent;
 }
 
 .miniaturas img:hover{
@@ -350,41 +225,41 @@ GALERIA
     border-color:#F58FB9;
 }
 
-/*==============================
-CONTADOR
-==============================*/
+/* =========================
+   CONTAGEM
+========================= */
 
 .contador{
-    padding:80px 20px;
+    padding:70px 20px;
     text-align:center;
 }
 
 .contador h2{
+    color:#D76AA6;
     font-size:36px;
-    color:#D66BA6;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 #tempo{
-    font-size:46px;
-    font-weight:bold;
+    font-size:42px;
     color:#B36FD0;
+    font-weight:bold;
 }
 
-/*==============================
-PRESENTES
-==============================*/
+/* =========================
+   PRESENTES
+========================= */
 
 .presentes{
     max-width:1000px;
-    margin:70px auto;
+    margin:60px auto;
     padding:20px;
     text-align:center;
 }
 
 .presentes h2{
-    color:#D66BA6;
-    font-size:38px;
+    color:#D76AA6;
+    font-size:36px;
     margin-bottom:30px;
 }
 
@@ -396,18 +271,18 @@ PRESENTES
 }
 
 .presente{
-    background:white;
     width:220px;
+    background:#fff;
     padding:30px;
     border-radius:25px;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
-    font-size:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
     line-height:1.8;
+    font-size:20px;
 }
 
-/*==============================
-BOTÕES
-==============================*/
+/* =========================
+   BOTÕES
+========================= */
 
 .acoes{
     display:flex;
@@ -438,59 +313,19 @@ BOTÕES
     transform:translateY(-5px);
 }
 
-/*==============================
-BORBOLETAS
-==============================*/
-
-body::before{
- #abertura.oculto{
-    opacity:0;
-    visibility:hidden;
-    pointer-events:none;
-}
-
-#site{
-    display:none;
-}
-    content:"🦋";
-    position:fixed;
-    left:-50px;
-    top:70%;
-    font-size:34px;
-    animation:borboleta 20s linear infinite;
-    pointer-events:none;
-}
-
-@keyframes borboleta{
-
-0%{
-transform:translate(-50px,150px) rotate(0deg);
-}
-
-50%{
-transform:translate(55vw,-250px) rotate(20deg);
-}
-
-100%{
-transform:translate(110vw,-500px) rotate(-20deg);
-}
-
-}
-
-/*==============================
-RODAPÉ
-==============================*/
+/* =========================
+   RODAPÉ
+========================= */
 
 footer{
     text-align:center;
     padding:40px 20px;
     color:#888;
-    font-size:15px;
 }
 
-/*==============================
-RESPONSIVO
-==============================*/
+/* =========================
+   RESPONSIVO
+========================= */
 
 @media(max-width:768px){
 
@@ -506,14 +341,8 @@ RESPONSIVO
     font-size:18px;
 }
 
-.galeria h2,
-.presentes h2,
-.contador h2{
-    font-size:30px;
-}
-
-#tempo{
-    font-size:32px;
+#fotoPrincipal{
+    max-width:100%;
 }
 
 .miniaturas img{
@@ -521,13 +350,22 @@ RESPONSIVO
     height:70px;
 }
 
+.listaPresentes{
+    flex-direction:column;
+    align-items:center;
+}
+
 .presente{
-    width:100%;
+    width:90%;
 }
 
 .btn{
     width:90%;
     text-align:center;
+}
+
+#tempo{
+    font-size:30px;
 }
 
 }
