@@ -179,19 +179,4 @@ tela.style.display="none";
 
 },900);
 
-});
-// ===========================
-// ENVELOPE DE ABERTURA
-// ===========================
 
-const telaEnvelope = document.getElementById("envelopeTela");
-const envelope = document.querySelector(".envelope");
-const abrirEnvelope = document.getElementById("abrirEnvelope");
-
-// Usa a música que já existe no projeto.
-// Se você ainda não criou a variável "musica", descomente a linha abaixo:
-// const musica = new Audio("musica.mp3");
-
-abrirEnvelope.addEventListener("click", () => {
-
-   
