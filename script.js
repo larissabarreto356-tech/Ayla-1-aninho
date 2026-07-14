@@ -194,23 +194,4 @@ const abrirEnvelope = document.getElementById("abrirEnvelope");
 
 abrirEnvelope.addEventListener("click", () => {
 
-    // Abre o envelope
-    envelope.classList.add("aberto");
-
-    // Inicia a música
-    if (typeof musica !== "undefined") {
-        musica.play().catch(() => {});
-    }
-
-    // Esconde o envelope depois da animação
-    setTimeout(() => {
-
-        telaEnvelope.style.opacity = "0";
-
-        setTimeout(() => {
-            telaEnvelope.style.display = "none";
-        }, 800);
-
-    }, 1200);
-
-});
+   
