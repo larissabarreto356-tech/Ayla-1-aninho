@@ -6,12 +6,12 @@
 // GALERIA
 
 const fotos = [
-"foto1.jpg"'
-"foto2.jpg"'
-"foto3.jpg"'
-"foto4.jpg"'
-"foto5.jpg"'
-"foto6.jpg"'
+"foto1.jpg",
+"foto2.jpg",
+"foto3.jpg",
+"foto4.jpg",
+"foto5.jpg",
+"foto6.jpg"
 ];
 
 let atual = 0;
@@ -141,22 +141,3 @@ card.style.transition=".8s";
 window.addEventListener("scroll",aparecer);
 
 aparecer();
-// ===============================
-// MÚSICA AO ABRIR O CONVITE
-// ===============================
-
-const musica = new Audio("musica.mp3");
-musica.loop = true;
-
-const abrirConvite = document.querySelector(".botaoPrincipal");
-
-if (abrirConvite) {
-
-    abrirConvite.addEventListener("click", () => {
-
-        musica.play().catch(() => {});
-
-    }, { once: true });
-
-
-
