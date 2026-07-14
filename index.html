@@ -4,16 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Ayla • 1 Aninho</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -21,27 +19,36 @@
 
 <body>
 
-<!-- ENVELOPE -->
+<!-- =======================
+TELA DE ABERTURA
+======================== -->
 
 <div id="abertura">
 
+<div class="brilho"></div>
+
 <div class="envelope">
 
-<div class="flap"></div>
+<div class="tampa"></div>
+
+<div class="corpo">
 
 <div class="carta">
 
 <h1>🌸</h1>
 
-<h2>Você recebeu um convite especial</h2>
+<h2>Você recebeu um convite muito especial</h2>
 
 <p>
 
-Toque no botão abaixo para abrir o convite da nossa princesa.
+Nossa princesa Ayla vai completar
+<strong>1 aninho</strong>.
+
+Esperamos você para viver esse momento conosco.
 
 </p>
 
-<button id="abrir">
+<button id="abrirConvite">
 
 Abrir Convite 💖
 
@@ -53,11 +60,15 @@ Abrir Convite 💖
 
 </div>
 
-<!-- CONVITE -->
+</div>
+
+<!-- =======================
+SITE
+======================== -->
 
 <div id="site">
 
-<header>
+<header class="hero">
 
 <h1>Ayla</h1>
 
@@ -65,7 +76,7 @@ Abrir Convite 💖
 
 <p>
 
-"Um jardim de amor floresceu há um ano..."
+"Há um ano Deus nos presenteou com a mais linda flor do nosso jardim."
 
 </p>
 
@@ -111,7 +122,10 @@ Bagé - RS
 
 <h2>Momentos da Ayla</h2>
 
-<img id="fotoPrincipal" src="foto1.jpg">
+<img
+id="fotoPrincipal"
+src="foto1.jpg"
+alt="Ayla">
 
 <div class="miniaturas">
 
@@ -120,7 +134,6 @@ Bagé - RS
 <img src="foto2.jpg" onclick="trocarFoto(2)">
 
 <img src="foto3.jpg" onclick="trocarFoto(3)">
-
 <img src="foto4.jpg" onclick="trocarFoto(4)">
 
 <img src="foto5.jpg" onclick="trocarFoto(5)">
@@ -131,47 +144,81 @@ Bagé - RS
 
 </section>
 
+<!-- CONTAGEM -->
+
 <section class="contador">
 
 <h2>Faltam...</h2>
 
-<h1 id="tempo"></h1>
+<div id="tempo">
+
+00 Dias 00:00:00
+
+</div>
 
 </section>
+
+<!-- PRESENTES -->
 
 <section class="presentes">
 
 <h2>Sugestão de Presentes</h2>
 
-<ul>
+<div class="listaPresentes">
 
-<li>👗 Roupa tamanho 1 ano</li>
+<div class="presente">
 
-<li>👟 Sapato nº 19</li>
+👕<br>
 
-<li>🍼 Fralda Huggies G</li>
+Roupinhas<br>
 
-</ul>
+<strong>Tamanho 1 Ano</strong>
+
+</div>
+
+<div class="presente">
+
+👟<br>
+
+Sapato<br>
+
+<strong>Nº 19</strong>
+
+</div>
+
+<div class="presente">
+
+🍼<br>
+
+Fralda<br>
+
+<strong>Huggies G</strong>
+
+</div>
+
+</div>
 
 </section>
 
-<section class="botoes">
+<!-- BOTÕES -->
+
+<section class="acoes">
 
 <a
-class="whats"
+class="btn whatsapp"
 href="https://wa.me/5553997018089"
 target="_blank">
 
-Confirmar Presença
+💬 Confirmar Presença
 
 </a>
 
 <a
-class="mapa"
+class="btn mapa"
 href="https://www.google.com/maps/search/?api=1&query=Anima+Kids+Avenida+Espanha+359+Bagé+RS"
 target="_blank">
 
-Como Chegar
+📍 Como Chegar
 
 </a>
 
@@ -179,13 +226,19 @@ Como Chegar
 
 <footer>
 
+<p>
+
 Feito com ❤️ para celebrar o primeiro aninho da Ayla.
+
+</p>
 
 </footer>
 
 </div>
 
-<audio id="musica" loop>
+<!-- ÁUDIO -->
+
+<audio id="musica" preload="auto" loop>
 
 <source src="musica.mp3" type="audio/mpeg">
 
