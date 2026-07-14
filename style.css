@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#ffeef8,#fff8fc,#f9f1ff);
+    color:#555;
+    overflow-x:hidden;
+}
+
+.capa{
+    max-width:900px;
+    margin:40px auto;
+    background:#ffffffee;
+    border-radius:30px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+h1{
+    font-family:'Great Vibes',cursive;
+    font-size:72px;
+    color:#e68ab8;
+    margin-bottom:10px;
+}
+
+h2{
+    font-size:32px;
+    color:#b56cc9;
+    margin-bottom:25px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.informacoes{
+    margin:30px auto;
+    background:#fff7fb;
+    border-radius:20px;
+    padding:25px;
+    border:2px solid #ffd8ea;
+}
+
+.botoes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin:35px 0;
+}
+
+.botao{
+    background:#f48fb1;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#ec407a;
+    transform:scale(1.05);
+}
+
+h3{
+    color:#c46ab5;
+    margin-top:40px;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+ul li{
+    margin:12px 0;
+    font-size:18px;
+}
+
+footer{
+    margin-top:45px;
+    color:#888;
+    font-size:15px;
+}
+
+.flores{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background-image:
+    radial-gradient(circle,#ffd6ea 2px,transparent 2px),
+    radial-gradient(circle,#e1bee7 2px,transparent 2px);
+    background-size:80px 80px;
+    opacity:.35;
+    animation:fundo 18s linear infinite;
+}
+
+@keyframes fundo{
+
+0%{
+background-position:0 0,40px 40px;
+}
+
+100%{
+background-position:0 300px,40px 340px;
+}
+
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:56px;
+}
+
+h2{
+font-size:26px;
+}
+
+.botao{
+display:block;
+width:100%;
+}
+
+.capa{
+margin:15px;
+padding:25px;
+}
+
+}
