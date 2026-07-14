@@ -834,3 +834,30 @@ linear-gradient(
 background-attachment:fixed;
 
 }
+.fraseFinal{
+
+margin-top:20px;
+
+font-size:15px;
+
+color:#b56ed2;
+
+font-style:italic;
+
+animation:pulsarFrase 2s infinite;
+
+}
+
+@keyframes pulsarFrase{
+
+0%{
+opacity:.6;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+opacity:.6;
+}
