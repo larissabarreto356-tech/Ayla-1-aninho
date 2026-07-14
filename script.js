@@ -159,3 +159,24 @@ if (abrirConvite) {
     }, { once: true });
 
 }
+// ===========================
+// ABRIR CONVITE
+// ===========================
+
+const tela = document.getElementById("abertura");
+
+const abrir = document.getElementById("abrir");
+
+abrir.addEventListener("click",()=>{
+
+musica.play().catch(()=>{});
+
+tela.style.opacity="0";
+
+setTimeout(()=>{
+
+tela.style.display="none";
+
+},900);
+
+});
