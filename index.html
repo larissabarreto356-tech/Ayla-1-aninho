@@ -1,57 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ayla - 1 Aninho</title>
+<title>Ayla • 1 Aninho</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="flores"></div>
+<div class="borboletas"></div>
 
-<section class="capa">
+<header class="hero">
+
+<div class="hero-conteudo">
 
 <h1>Ayla</h1>
 
 <h2>1 Aninho</h2>
 
-<p>
-Com muita alegria convidamos você para celebrar este momento tão especial da nossa princesa.
+<p class="frase">
+
+"Um jardim de amor floresceu há um ano...
+e queremos celebrar esse dia com você."
+
 </p>
 
-<div class="informacoes">
+<a href="#convite" class="botaoPrincipal">
 
-<p>📅 <strong>23 de Agosto de 2026</strong></p>
+Ver Convite
 
-<p>🕓 16:00</p>
-
-<p>📍 Anima Kids<br>
-Avenida Espanha, nº 359<br>
-Bagé - RS</p>
-
-</div>
-
-<div class="botoes">
-
-<a class="botao"
-href="https://wa.me/5553997018089">
-Confirmar Presença
-</a>
-
-<a class="botao"
-href="https://www.google.com/maps/search/Anima+Kids+Avenida+Espanha+359+Bagé+RS">
-Como Chegar
 </a>
 
 </div>
 
-<h3>Sugestão de Presentes</h3>
+</header>
+
+<section id="convite" class="convite">
+
+<h2>Você é nosso convidado especial!</h2>
+
+<p>
+
+Com muita alegria esperamos você para comemorar
+o primeiro aninho da nossa princesa Ayla.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📅 Data</h3>
+
+<p>23 de Agosto de 2026</p>
+
+</div>
+
+<div class="card">
+
+<h3>🕓 Horário</h3>
+
+<p>16:00</p>
+
+</div>
+
+<div class="card">
+
+<h3>📍 Local</h3>
+
+<p>
+
+Anima Kids<br>
+
+Avenida Espanha nº 359<br>
+
+Bagé - RS
+
+</p>
+
+</div>
+<div class="galeria">
+
+<h2>Momentos Especiais da Ayla</h2>
+
+<div class="slider">
+
+<img id="fotoPrincipal"
+src="imagens/foto1.jpg"
+alt="Ayla">
+
+</div>
+
+<div class="miniaturas">
+
+<img src="imagens/foto1.jpg" onclick="trocarFoto(1)">
+
+<img src="imagens/foto2.jpg" onclick="trocarFoto(2)">
+
+<img src="imagens/foto3.jpg" onclick="trocarFoto(3)">
+
+<img src="imagens/foto4.jpg" onclick="trocarFoto(4)">
+
+<img src="imagens/foto5.jpg" onclick="trocarFoto(5)">
+
+<img src="imagens/foto6.jpg" onclick="trocarFoto(6)">
+
+</div>
+
+</div>
+
+<section class="presentes">
+
+<h2>Sugestão de Presentes</h2>
 
 <ul>
 
@@ -63,13 +136,43 @@ Como Chegar
 
 </ul>
 
+</section>
+
+<section class="confirmacao">
+
+<h2>Esperamos você!</h2>
+
+<a class="botaoWhats"
+href="https://wa.me/5553997018089"
+target="_blank">
+
+💬 Confirmar Presença
+
+</a>
+
+<a class="botaoMapa"
+href="https://www.google.com/maps/search/?api=1&query=Anima+Kids+Avenida+Espanha+359+Bagé+RS"
+target="_blank">
+
+📍 Como Chegar
+
+</a>
+
+</section>
+
 <footer>
 
-Feito com ❤️ para comemorar o primeiro aninho da Ayla.
+<p>
+
+Feito com ❤️ para celebrar o primeiro aninho da Ayla.
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
+</div>
