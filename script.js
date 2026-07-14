@@ -136,18 +136,15 @@ botaoAbrir.addEventListener("click", () => {
     setTimeout(() => {
 
         abertura.style.opacity = "0";
+abertura.style.visibility = "hidden";
+abertura.style.pointerEvents = "none";
 
-        setTimeout(() => {
+site.style.display = "block";
 
-            abertura.style.display = "none";
-            site.style.display = "block";
-
-            window.scrollTo({
-                top:0,
-                behavior:"smooth"
-            });
-
-        },800);
+window.scrollTo({
+    top:0,
+    behavior:"smooth"
+});
 
     },900);
 
