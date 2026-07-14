@@ -57,7 +57,8 @@ background-position:0 600px;
 }
 
 .envelope{
-    width:360px;
+    width:420px;
+    max-width:90%;
     position:relative;
 }
 
@@ -78,8 +79,10 @@ background-position:0 600px;
 }
 
 .carta{
-    padding:35px;
+    padding:30px;
     text-align:center;
+    max-height:70vh;
+    overflow-y:auto;
 }
 
 .carta h1{
@@ -94,7 +97,8 @@ background-position:0 600px;
 
 .carta p{
     line-height:1.8;
-    margin-bottom:25px;
+    margin-bottom:20px;
+    font-size:17px;
 }
 
 #abrirConvite{
@@ -449,8 +453,10 @@ background-position:0 600px;
 }
 
 .carta{
-    padding:35px;
+    padding:30px;
     text-align:center;
+    max-height:70vh;
+    overflow-y:auto;
 }
 
 .carta h1{
