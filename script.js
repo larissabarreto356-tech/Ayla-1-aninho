@@ -141,3 +141,21 @@ card.style.transition=".8s";
 window.addEventListener("scroll",aparecer);
 
 aparecer();
+// ===============================
+// MÚSICA AO ABRIR O CONVITE
+// ===============================
+
+const musica = new Audio("musica.mp3");
+musica.loop = true;
+
+const abrirConvite = document.querySelector(".botaoPrincipal");
+
+if (abrirConvite) {
+
+    abrirConvite.addEventListener("click", () => {
+
+        musica.play().catch(() => {});
+
+    }, { once: true });
+
+}
