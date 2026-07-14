@@ -6,12 +6,12 @@
 // GALERIA
 
 const fotos = [
-"imagens/foto1.jpg",
-"imagens/foto2.jpg",
-"imagens/foto3.jpg",
-"imagens/foto4.jpg",
-"imagens/foto5.jpg",
-"imagens/foto6.jpg"
+src="foto1.jpg"
+src="foto2.jpg"
+src="foto3.jpg"
+src="foto4.jpg"
+src="foto5.jpg"
+src="foto6.jpg"
 ];
 
 let atual = 0;
