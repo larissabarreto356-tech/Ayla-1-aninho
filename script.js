@@ -180,3 +180,37 @@ tela.style.display="none";
 },900);
 
 });
+// ===========================
+// ENVELOPE DE ABERTURA
+// ===========================
+
+const telaEnvelope = document.getElementById("envelopeTela");
+const envelope = document.querySelector(".envelope");
+const abrirEnvelope = document.getElementById("abrirEnvelope");
+
+// Usa a música que já existe no projeto.
+// Se você ainda não criou a variável "musica", descomente a linha abaixo:
+// const musica = new Audio("musica.mp3");
+
+abrirEnvelope.addEventListener("click", () => {
+
+    // Abre o envelope
+    envelope.classList.add("aberto");
+
+    // Inicia a música
+    if (typeof musica !== "undefined") {
+        musica.play().catch(() => {});
+    }
+
+    // Esconde o envelope depois da animação
+    setTimeout(() => {
+
+        telaEnvelope.style.opacity = "0";
+
+        setTimeout(() => {
+            telaEnvelope.style.display = "none";
+        }, 800);
+
+    }, 1200);
+
+});
